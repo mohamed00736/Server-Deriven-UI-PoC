@@ -3,6 +3,7 @@ package com.yassirx.sdui_poc.data.repo
 
 import com.yassirx.sdui_poc.data.network.UserApi
 import com.yassirx.sdui_poc.data.network.SafeApiCall
+import okhttp3.RequestBody
 import javax.inject.Inject
 
 class UserRepository @Inject constructor(
@@ -11,12 +12,12 @@ class UserRepository @Inject constructor(
 
 //    suspend fun getOnBoarding() = safeApiCall { api.getOnBoarding() }
 //
-//    suspend fun uploadFile(
-//        path: String,
-//        data: RequestBody,
-//    ) = safeApiCall {
-//        api.uploadFile(path = path, file = data)
-//    }
+    suspend fun uploadFile(
+    path: String,
+    data: RequestBody,
+    ) = safeApiCall {
+        api.uploadFile(path = path, file = data)
+    }
 
 
     suspend fun getOnBoardingStatus() = safeApiCall(apiCall = api::getOnBoardingStatus)

@@ -2,6 +2,7 @@ package com.yassirx.sdui_poc.data.network
 
 
 import com.harbin.vtcdrivertransport.model.OnBoardingStatus
+import com.yassirx.sdui_poc.model.FileUploadedRes
 import okhttp3.RequestBody
 import retrofit2.http.*
 
@@ -13,11 +14,11 @@ interface UserApi {
 //    suspend fun getOnBoarding(): OnBoarding
 //
 //
-//    @POST("driver/{path}")
-//    suspend fun uploadFile(
-//        @Path("path", encoded = true) path: String,
-//        @Body file: RequestBody,
-//    ): FileUploadedRes
+    @POST("driver/{path}")
+    suspend fun uploadFile(
+        @Path("path", encoded = true) path: String,
+        @Body file: RequestBody,
+    ): FileUploadedRes
 
 
     @GET("driver/application/status")

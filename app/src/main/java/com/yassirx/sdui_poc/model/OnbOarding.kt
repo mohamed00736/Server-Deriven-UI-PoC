@@ -1,6 +1,7 @@
 package com.yassirx.sdui_poc.model
 
 import com.google.gson.annotations.SerializedName
+import com.squareup.moshi.Json
 
 data class OnboardingData(
     val groups: List<OnboardingGroup>
@@ -64,6 +65,7 @@ data class OnboardingComponent(
     var status: String? = null,
     var message: String? = null,
     val mandatory: Boolean,
+    val path: String?,
     val options: List<String>? = null,
     @SerializedName("path") val uploadPath: String? = null
 ) {
@@ -81,3 +83,12 @@ data class OnboardingComponent(
 
     val isAccepted: Boolean get() = status == ComponentStatus.ACCEPTED.value
 }
+
+data class FileUploadedRes(
+    @Json(name = "data") val data: FileUploadedData
+)
+
+data class FileUploadedData(
+    @Json(name = "mediaID") val id: Int?,
+    @Json(name = "url") val url: String?,
+)

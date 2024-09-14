@@ -78,6 +78,7 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
 
+
     //Retrofit
     implementation (libs.moshi.kotlin)
     implementation (libs.moshi)
@@ -86,9 +87,11 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
+    implementation ("br.com.devsrsouza.compose.icons.android:font-awesome:1.0.0")
 
     implementation(libs.androidx.datastore.preferences)
-
+    // Glide Image For Loading Pictures
+    implementation ("com.github.skydoves:landscapist-glide:1.3.6")
 
     // lifecycle service
     implementation(libs.androidx.lifecycle.service)
