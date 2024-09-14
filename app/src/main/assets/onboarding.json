@@ -1,0 +1,136 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "title": "Account Creation",
+            "pages": [
+                {
+                    "title": "Personal Information",
+                    "description": "Enter your personal details.",
+                    "components": [
+                        {
+                            "type": "text",
+                            "title": "Name",
+                            "key": "name",
+                            "mandatory": true
+                        },
+                        {
+                            "type": "email",
+                            "title": "Email Address",
+                            "key": "email",
+                            "mandatory": true
+                        },
+                        {
+                            "type": "phone",
+                            "title": "Phone Number",
+                            "key": "phone",
+                            "mandatory": true
+                        }
+                    ]
+                },
+                {
+                    "title": "Password Creation",
+                    "description": "Create a strong password.",
+                    "components": [
+                        {
+                            "type": "password",
+                            "title": "Password",
+                            "key": "password",
+                            "mandatory": true
+                        },
+                        {
+                            "type": "password",
+                            "title": "Confirm Password",
+                            "key": "confirm_password",
+                            "mandatory": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Document Upload",
+            "pages": [
+                {
+                    "title": "Upload Documents",
+                    "description": "Upload the necessary documents for verification.",
+                    "components": [
+                        {
+                            "type": "file",
+                            "title": "ID Card",
+                            "key": "id_card",
+                            "mandatory": true
+                        },
+                        {
+                            "type": "file",
+                            "title": "Proof of Address",
+                            "key": "proof_of_address",
+                            "mandatory": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Financial Information",
+            "pages": [
+                {
+                    "title": "Bank Account Information",
+                    "description": "Enter your bank account details.",
+                    "components": [
+                        {
+                            "type": "text",
+                            "title": "Bank Account Number",
+                            "key": "account_number",
+                            "mandatory": true
+                        },
+                        {
+                            "type": "text",
+                            "title": "Routing Number",
+                            "key": "routing_number",
+                            "mandatory": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Profile Setup",
+            "pages": [
+                {
+                    "title": "Profile Picture",
+                    "description": "Upload or take a profile picture.",
+                    "components": [
+                        {
+                            "type": "file",
+                            "title": "Profile Picture",
+                            "key": "profile_picture",
+                            "mandatory": false
+                        }
+                    ]
+                },
+                {
+                    "title": "Personal Details",
+                    "description": "Enter additional personal details.",
+                    "components": [
+                        {
+                            "type": "text",
+                            "title": "Address",
+                            "key": "address",
+                            "mandatory": false
+                        },
+                        {
+                            "type": "date",
+                            "title": "Date of Birth",
+                            "key": "dob",
+                            "mandatory": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

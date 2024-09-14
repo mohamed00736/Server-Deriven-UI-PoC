@@ -1,3 +1,241 @@
 <resources>
     <string name="app_name">SDUI-PoC</string>
+    <string name="accept">Accept</string>
+    <string name="add_to_calendar">Add it to your calendar</string>
+    <string name="appointment_confirmed">Appointment confirmed successfully 🙌</string>
+    <string name="appointment_confirmed_msg">Our team will follow up with you for further confirmation.</string>
+    <string name="awaiting_pickup">Awaiting Pickup..</string>
+    <string name="balance">Balance</string>
+    <string name="before_you_proceed">Before you proceed</string>
+    <string name="booking">Booking</string>
+    <string name="call_client_service">Call customer support</string>
+    <string name="cash_payment">Cash payment</string>
+    <string name="confirm_appointment">Confirm appointment</string>
+    <string name="criminal_records">Criminal records</string>
+    <string name="date_of_birth">Enter your date of birth</string>
+    <string name="delete_from_calendar">Delete from your calendar</string>
+    <string name="dialog_goto_setting">Go to Settings</string>
+    <string name="dialog_gps_setting">Location services need to be enabled, please press [Go to Settings] button and then Enable [Location Service] in the settings page, finally press [Back] button to return to this page!</string>
+    <string name="discard_changes">Discard changes</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="driver_licence">Driver license</string>
+    <string name="email_exemple">For example: bbbb@email.com</string>
+    <string name="end_trip">End trip</string>
+    <string name="enter_trip">Enter trip</string>
+    <string name="go_on_service">Go on service</string>
+    <string name="got_it">Got it</string>
+    <string name="hello">Hello</string>
+    <string name="help_center">Help center</string>
+    <string name="id_card">ID Card</string>
+    <string name="in_trip_to_destination">In trip to destination</string>
+    <string name="in_trip_to_pickup">In trip to pick up</string>
+    <string name="invite_friends">Invite a friend</string>
+    <string name="location_screen_currnet_postion">Current location</string>
+    <string name="location_screen_set_on_map">Set on map</string>
+    <string name="location_screen_submit">Done</string>
+    <string name="loocation_screen_destinitin_label">Destination</string>
+    <string name="make_sure_to_have">Make sure to prepare the following documents:</string>
+    <string name="map_driver_status_off">You are off-service</string>
+    <string name="map_driver_status_on">You are on-service</string>
+    <string name="map_input_placeholder">Where to?</string>
+    <string name="map_recent_locations">Your recent trips</string>
+    <string name="map_request_title">Hey! Welcome back, Bilal!</string>
+    <string name="menu">Menu</string>
+    <string name="min_away">min away</string>
+    <string name="missing_document">Missing documents:</string>
+    <string name="my_bookings">My bookings</string>
+    <string name="my_earnings">My earnings</string>
+    <string name="my_profile">My profile</string>
+    <string name="name_exemple">For example : John Nkhniga </string>
+    <string name="next">Next</string>
+    <string name="no_data">No result</string>
+    <string name="onboardin_auth">on_boarding_auth</string>
+    <string name="on_boarding_button_start">Get Started</string>
+    <string name="onboarding_head_line">Arbin allows you to convert your driving miles to actual cash.</string>
+    <string name="onboardin_login">Login</string>
+    <string name="onboardin_signup">Sign up</string>
+    <string name="on_service_msg">You are on service</string>
+    <string name="other_reason">Orther? Please describe it</string>
+    <string name="otp_sent">We have sent the code to</string>
+    <string name="profile">Profile</string>
+    <string name="rating_action_msg">Rate your experience</string>
+    <string name="report_problem">Report a problem</string>
+    <string name="retry">Retry</string>
+    <string name="ride_details">Rides details</string>
+    <string name="rider_didnt_showup">The client didn\'t show up</string>
+    <string name="rider_not_professional">The client was unprofessional</string>
+    <string name="rider_too_far">The client is far from my location</string>
+    <string name="rides_history">Rides history</string>
+    <string name="save_changes">Save changes</string>
+    <string name="schedule_session_msg">In order to join Arbin drivers network, please schedule an appointment.</string>
+    <string name="select_date">Select a date</string>
+    <string name="select_time_slot">Select a time slot</string>
+    <string name="set_on_map_confirm_destination">Confirm destination</string>
+    <string name="set_on_map_confirm_pickup">Confirm pickup</string>
+    <string name="signin_button_confirm">Confirm</string>
+    <string name="signin_header">Hey! please enter your phone number</string>
+    <string name="signup_dateOfBirth">Date of birth</string>
+    <string name="signup_email">Email address</string>
+    <string name="signup_email_title">Let\'s keep in touch </string>
+    <string name="signup_full_name">Full name</string>
+    <string name="signup_full_name_title">Let\'s get to know you</string>
+    <string name="signup_gender">Gender</string>
+    <string name="signup_session">Session</string>
+    <!--    <string name="start_trip">Start trip</string>-->
+    <string name="submit_and_cancel">Submit &amp; cancel trip</string>
+    <string name="title_tip">Tip</string>
+    <string name="top_up_balance">Top up balance</string>
+    <string name="trip">Trip</string>
+    <string name="trips">Trips</string>
+    <string name="trip_request_title_loadind_drivers">Loading drivers </string>
+    <string name="trip_this_week">trips this week</string>
+    <string name="upcoming_booking">Upcoming booking:</string>
+    <string name="welcome_to_Arbin">Welcome to Arbin Driver.</string>
+    <string name="welcome_to_harbin">Welcome to Arbin Driver.</string>
+    <string name="wow_made_it">Wow, you have made it</string>
+    <string name="write_us_spmthing">Write us something</string>
+
+    <string name="go_to_pickup">Go to pick up</string>
+    <string name="arrived_to_pickup">Arrived to pickup</string>
+
+    <string name="logout">Logout</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+
+    <string name="not_enough_balance_msg">You don’t have enough balance to go on-service.</string>
+    <string name="top_up_balance_msg">Top up your balance and start making money.</string>
+    <string name="choose_plan">Choose a plan</string>
+
+    <string name="resend_code_in">Resend code in</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <string name="submit">Submit</string>
+    <string name="other">Autre Chose ?</string>
+    <string name="trip_ending">Fin du voyage</string>
+
+    <string name="login_accept_terms"><![CDATA[By clicking “Next”, you agree to our \nTerms & Conditions.]]></string>
+    <string name="trip_insured_by_axa"><![CDATA[Your trip is insured by Axa Assurance \nTerms & Conditions]]></string>
+    <string name="term_condition"><![CDATA[Terms & Conditions]]></string>
+
+    <string name="update">Update</string>
+    <string name="update_available">Update available!</string>
+    <string name="update_msg">New update is available, please update to major version to benefit from the latest features</string>
+    <string name="maintenance">Maintenance!</string>
+    <string name="maintenance_msg">Server under maintenance, please try later</string>
+    <string name="exit">Exit</string>
+
+    <string name="provide">Provide</string>
+
+    <string name="status">Status</string>
+    <string name="on_service">You are on service</string>
+    <string name="client_canceled">Unfortunately, your client canceled the trip</string>
+    <string name="i_understand">I Understand</string>
+    <string name="your_phone">Your phone number</string>
+    <string name="arbin_charge_msg">Arbin pays you back</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="bonus">Bonus</string>
+    <string name="expire_at">Expire at:</string>
+
+    <string name="of">of</string>
+    <string name="completed">Completed</string>
+    <string name="see_more_details">See more details</string>
+
+    <string name="no_upcoming_bookings">No upcoming bookings</string>
+    <string name="no_recent_ride">You have no recent rides</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="rewards">Rewards</string>
+    <string name="non_to_pay">Nothing to pay</string>
+    <string name="to_be_cashed">To be cashed from Arbin</string>
+    <string name="to_be_paied">To be paid to Arbin</string>
+    <string name="ready_to_be_claimed">Ready to be claimed</string>
+    <string name="awaiting_admin_approval">Awaiting admin approval</string>
+    <string name="rejected_or_expired">Rejected or Expired</string>
+
+    <string name="AXA_ASSURANCE">AXA Insurance</string>
+    <string name="finish_trip">Finish a trip</string>
+    <string name="harbin_income">Arbin income</string>
+    <string name="start_trip">Start trip</string>
+    <string name="finished_trip">Finish a trip</string>
+    <string name="voucher">Voucher</string>
+    <string name="tup_up_driver_trip_balance">Top-up driver trip balance</string>
+    <string name="no_available_reward">You have no available rewards at the moment</string>
+    <string name="update_downloaded">The update has been downloaded and is ready to be installed</string>
+    <string name="later">Later</string>
+    <string name="install">Install</string>
+    <string name="app_update">App update</string>
+
+    <string name="car_models">Car Models</string>
+    <string name="car_brands">Car Brands</string>
+    <string name="select_your_brand">Select your car brand</string>
+    <string name="select_your_model">Select your car model</string>
+    <string name="search">Search</string>
+
+    <string name="personal_info">Personal information</string>
+    <string name="driver_doc">Driver\'s documents</string>
+    <string name="car_doc">Car\'s documents</string>
+
+    <string name="what_your_name">What’s your name?</string>
+    <string name="your_birth">Your Birth Date?</string>
+    <string name="date_ex">DD/MM/YYYY</string>
+    <string name="your_email">Your Email address</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="profile_pic">Profile picture</string>
+    <string name="driver_license">Driver’s license</string>
+    <string name="take_pic">Take picture</string>
+    <string name="exp_date">Expiration date</string>
+
+    <string name="car_type">Vehicle type</string>
+    <string name="car_type_msg">Please choose your car brand and model from the lists below.</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="tech_control">Technical control</string>
+    <string name="upload_front_page">Upload the front page</string>
+    <string name="upload_back_page">Upload the back page</string>
+    <string name="license_car_pic">License plate &amp; Car picture</string>
+    <string name="license_plate">License plate</string>
+    <string name="license_plate_ex" translatable="false">00000-000-00</string>
+    <string name="take_car_pic">Take a picture of your car</string>
+    <string name="grey_card">Grey Card</string>
+    <string name="insurance">Insurance</string>
+    <string name="insurance_exp_date">Insurance expiration date</string>
+    <string name="procuration">Procuration</string>
+    <string name="button_continue">Continue</string>
+    <string name="get_started_with_on_boarding">Get started with on Boarding</string>
+    <string name="before_getting_start_onboarding_description">"Before getting started with the onboarding, please make sure to get your personal and car’s document."</string>
+    <string name="after_omplete_onboarding_description">"After you complete successfully uploading the required documents, our team will follow up with you to get you started."</string>
+    <string name="awesome">Awesome!</string>
+    <string name="onboarding_finalized_successfully">Your onboarding has been finalized successfully.</string>
+    <string name="rejected">Rejected</string>
+    <string name="accepted">Accepted</string>
+    <string name="pending">Pending</string>
+    <string name="view_documents">View documents</string>
+    <string name="missing_documents">Missing documents</string>
+    <string name="ok">OK</string>
+    <string name="on_boarding_completed_successfully">On boarding completed successfully</string>
+    <string name="trip_request">Trip request 🚕🚨</string>
+    <string name="you_have_a_new_trip_request">You have a new trip request</string>
+    <string name="trip_canceled">Trip canceled</string>
+    <string name="application_approved">Application approved</string>
+    <string name="your_application_has_been_approved">Your application has been approved</string>
+    <string name="application_rejected">Application rejected</string>
+    <string name="your_application_has_been_rejected">Your application has been rejected</string>
+    <string name="application_field_rejected">Application field rejected</string>
+    <string name="a_field_in_your_application_has_been_rejected">A field in your application has been rejected</string>
+    <string name="tup_validated">TUP validated</string>
+    <string name="tup_validated_description">TUP validated description</string>
+    <string name="claim_fraud">Claim fraud</string>
+    <string name="claim_fraud_description">Claim fraud description</string>
+    <string name="pay_your_debt">Pay your debt</string>
+    <string name="pay_your_debt_description">Pay your debt description</string>
+    <string name="pay_driver">Pay Driver</string>
+    <string name="pay_driver_description">Pay driver description</string>
 </resources>

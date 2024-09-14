@@ -20,14 +20,13 @@ import javax.inject.Singleton
 object NetworkModule {
 
     // You Base url here
-    private const val BASE_URL: String = ""
+    private const val BASE_URL: String = "https://github.com/YassirX/"
 
-//    @Provides
-//    @Singleton
-//    fun provideHttpLoggingInterceptor() = HttpLoggingInterceptor().apply {
-//        level =
-//            if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
-//    }
+    @Provides
+    @Singleton
+    fun provideHttpLoggingInterceptor() = HttpLoggingInterceptor().apply {
+      //  level = if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
+    }
 
     @Provides
     @Singleton
