@@ -74,7 +74,7 @@ class DocumentUploadState(
             getImageRequestBody(uri, context).let { body ->
                 when (
                     val result = repo.uploadFile(
-                        path = data.path ?: "",
+                        path = data.uploadPath ?: "",
                         data = body,
                     )
                 ) {

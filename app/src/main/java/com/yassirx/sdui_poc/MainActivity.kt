@@ -10,6 +10,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
+import androidx.navigation.compose.rememberNavController
+import com.yassirx.sdui_poc.navigation.AppNavHost
 import com.yassirx.sdui_poc.ui.OnBoardingState.OnBoardingStateScreen
 
 
@@ -24,7 +26,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            OnBoardingStateScreen()
+//            OnBoardingStateScreen()
+            val navHostController = rememberNavController()
+            AppNavHost(navController = navHostController)
         }
     }
 }

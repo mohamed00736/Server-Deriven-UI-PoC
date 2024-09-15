@@ -15,6 +15,7 @@ import com.yassirx.sdui_poc.data.repo.UserRepository
 import com.yassirx.sdui_poc.fromJsonFile
 import com.yassirx.sdui_poc.model.OnboardingData
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
@@ -80,10 +81,13 @@ class OnBoardingStateViewModel @Inject constructor(
     fun getOnBoardingStatus() {
         viewModelScope.launch {
             _uiState.value = UiState.Loading
-            _listOfGroups.value ?: run {
-                dataStoreHelper.readOnBoardingStateData.firstOrNull()?.let {
-                    _listOfGroups.value = it
-                } ?: run {
+           // delay(2000)
+            _listOfGroups.value ?:
+//            run {
+//                dataStoreHelper.readOnBoardingStateData.firstOrNull()?.let {
+//                    _listOfGroups.value = it
+//                } ?:
+                run {
                     _listOfGroups.value ?: run {
                         _listOfGroups.value =
                             application.applicationContext.fromJsonFile(R.raw.onboarding)
@@ -91,7 +95,7 @@ class OnBoardingStateViewModel @Inject constructor(
                     _uiState.value = UiState.Success(_listOfGroups.value)
                     saveOnBoardingData(_listOfGroups.value)
                 }
-            }
+//            }
 //            when (val result = repository.getOnBoardingStatus()) {
 //                is Resource.Failure -> _uiState.value = UiState.Fail()
 //                is Resource.Success<*> -> {

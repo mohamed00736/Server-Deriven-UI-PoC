@@ -33,13 +33,13 @@
                     "description": "Create a strong password.",
                     "components": [
                         {
-                            "type": "password",
+                            "type": "text",
                             "title": "Password",
                             "key": "password",
                             "mandatory": true
                         },
                         {
-                            "type": "password",
+                            "type": "text",
                             "title": "Confirm Password",
                             "key": "confirm_password",
                             "mandatory": true
@@ -57,13 +57,13 @@
                     "description": "Upload the necessary documents for verification.",
                     "components": [
                         {
-                            "type": "file",
+                            "type": "document",
                             "title": "ID Card",
                             "key": "id_card",
                             "mandatory": true
                         },
                         {
-                            "type": "file",
+                            "type": "document",
                             "title": "Proof of Address",
                             "key": "proof_of_address",
                             "mandatory": true
@@ -105,7 +105,7 @@
                     "description": "Upload or take a profile picture.",
                     "components": [
                         {
-                            "type": "file",
+                            "type": "document",
                             "title": "Profile Picture",
                             "key": "profile_picture",
                             "mandatory": false

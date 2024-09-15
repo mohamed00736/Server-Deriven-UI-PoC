@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.ContextWrapper
 import android.os.Build
+import android.text.TextUtils
+import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.ui.Modifier
@@ -184,3 +186,9 @@ fun Modifier.dashedBorder(
         )
     }
 )
+
+
+fun String.isValidEmail() =
+    !TextUtils.isEmpty(this) && Patterns.EMAIL_ADDRESS.matcher(this).matches()
+
+fun String.isValidLicensePlate() = this.matches(Regex("^\\d{5,6}-1\\d{2}-\\d{2}\$"))

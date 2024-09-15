@@ -65,7 +65,7 @@ data class OnboardingComponent(
     var status: String? = null,
     var message: String? = null,
     val mandatory: Boolean,
-    val path: String?,
+   // val path: String?,
     val options: List<String>? = null,
     @SerializedName("path") val uploadPath: String? = null
 ) {
