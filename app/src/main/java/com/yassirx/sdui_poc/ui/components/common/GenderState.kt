@@ -1,4 +1,4 @@
-package com.arbin.arbincommon.ui.components
+package com.yassirx.sdui_poc.ui.components.common
 
 import com.yassirx.sdui_poc.ui.components.TextFieldState
 

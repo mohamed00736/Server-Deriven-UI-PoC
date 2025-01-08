@@ -1,7 +1,7 @@
 package com.yassirx.sdui_poc.data.network
 
 
-import com.harbin.vtcdrivertransport.model.OnBoardingStatus
+import com.yassirx.sdui_poc.model.OnBoardingStatus
 import com.yassirx.sdui_poc.model.FileUploadedRes
 import okhttp3.RequestBody
 import retrofit2.http.*

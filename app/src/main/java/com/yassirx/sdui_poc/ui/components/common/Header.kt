@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.ui.component
+package com.yassirx.sdui_poc.ui.components.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -24,7 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.arbin.arbincommon.ui.components.buttons.BackButton
+import com.yassirx.sdui_poc.ui.components.common.BackButton
 import com.yassirx.sdui_poc.R
 import com.yassirx.sdui_poc.toNiceFormat
 import com.yassirx.sdui_poc.ui.components.LinearProgressCustom

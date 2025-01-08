@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.di
+package com.yassirx.sdui_poc.di
 
 import com.yassirx.sdui_poc.data.network.UserApi
 import dagger.Module

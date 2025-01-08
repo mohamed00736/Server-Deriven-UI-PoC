@@ -1,4 +1,4 @@
-package com.arbin.arbincommon.ui.components.buttons
+package com.yassirx.sdui_poc.ui.components.common
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.interaction.MutableInteractionSource

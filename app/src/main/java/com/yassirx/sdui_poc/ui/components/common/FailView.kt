@@ -1,4 +1,4 @@
-package com.arbin.arbincommon.ui.components
+package com.yassirx.sdui_poc.ui.components.common
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

@@ -90,7 +90,6 @@ dependencies {
     implementation ("br.com.devsrsouza.compose.icons.android:font-awesome:1.0.0")
 
     implementation(libs.androidx.datastore.preferences)
-    // Glide Image For Loading Pictures
     implementation ("com.github.skydoves:landscapist-glide:1.3.6")
 
     // lifecycle service

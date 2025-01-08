@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.data.pref
+package com.yassirx.sdui_poc.data.pref
 
 import android.content.Context
 import androidx.datastore.core.DataStore

@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.model
+package com.yassirx.sdui_poc.model
 
 
 import com.squareup.moshi.Json

@@ -1,14 +1,13 @@
-package com.harbin.vtcdrivertransport.ui.onBoarding.flow.components.documentUpload
+package com.yassirx.sdui_poc.ui.components.documentUpload
 
 import android.content.Context
 import android.net.Uri
-import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
 
 import com.yassirx.sdui_poc.getImageRequestBody
 
-import com.harbin.vtcdrivertransport.data.pref.DataStoreHelper
+import com.yassirx.sdui_poc.data.pref.DataStoreHelper
 
 import com.yassirx.sdui_poc.R
 import com.yassirx.sdui_poc.data.network.Resource

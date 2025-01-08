@@ -4,18 +4,14 @@ import android.app.Application
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.viewModelScope
-import com.arbin.arbincommon.base.BaseViewModel
-
-import com.harbin.vtcdrivertransport.data.pref.DataStoreHelper
-
-import com.yassirx.sdui_poc.ui.UiState
+import com.yassirx.sdui_poc.data.pref.DataStoreHelper
 import com.yassirx.sdui_poc.R
 import com.yassirx.sdui_poc.data.network.Resource
 import com.yassirx.sdui_poc.data.repo.UserRepository
 import com.yassirx.sdui_poc.fromJsonFile
 import com.yassirx.sdui_poc.model.OnboardingData
+import com.yassirx.sdui_poc.ui.UiState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
@@ -83,10 +79,10 @@ class OnBoardingStateViewModel @Inject constructor(
             _uiState.value = UiState.Loading
            // delay(2000)
             _listOfGroups.value ?:
-//            run {
-//                dataStoreHelper.readOnBoardingStateData.firstOrNull()?.let {
-//                    _listOfGroups.value = it
-//                } ?:
+            run {
+                dataStoreHelper.readOnBoardingStateData.firstOrNull()?.let {
+                    _listOfGroups.value = it
+                } ?:
                 run {
                     _listOfGroups.value ?: run {
                         _listOfGroups.value =
@@ -95,22 +91,22 @@ class OnBoardingStateViewModel @Inject constructor(
                     _uiState.value = UiState.Success(_listOfGroups.value)
                     saveOnBoardingData(_listOfGroups.value)
                 }
-//            }
-//            when (val result = repository.getOnBoardingStatus()) {
-//                is Resource.Failure -> _uiState.value = UiState.Fail()
-//                is Resource.Success<*> -> {
-//                    val response = result.value
-//                    _listOfGroups.value?.groups?.forEach { group ->
-//                        group.pages.forEach { page ->
-//                            page.components.forEach { component ->
-//
-//                            }
-//                        }
-//                    }
-//                    _uiState.value = UiState.Success(_listOfGroups.value)
-//                    saveOnBoardingData(_listOfGroups.value)
-//                }
-//            }
+            }
+            when (val result = repository.getOnBoardingStatus()) {
+                is Resource.Failure -> _uiState.value = UiState.Fail()
+                is Resource.Success<*> -> {
+                    val response = result.value
+                    _listOfGroups.value?.groups?.forEach { group ->
+                        group.pages.forEach { page ->
+                            page.components.forEach { component ->
+
+                            }
+                        }
+                    }
+                    _uiState.value = UiState.Success(_listOfGroups.value)
+                    saveOnBoardingData(_listOfGroups.value)
+                }
+            }
         }
     }
 

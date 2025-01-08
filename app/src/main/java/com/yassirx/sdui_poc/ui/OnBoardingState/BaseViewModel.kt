@@ -1,4 +1,4 @@
-package com.arbin.arbincommon.base
+package com.yassirx.sdui_poc.ui.OnBoardingState
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

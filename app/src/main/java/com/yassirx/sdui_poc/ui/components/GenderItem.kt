@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.ui.onBoarding.flow.components
+package com.yassirx.sdui_poc.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

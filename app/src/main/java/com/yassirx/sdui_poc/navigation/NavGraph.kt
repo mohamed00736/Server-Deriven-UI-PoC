@@ -6,7 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.harbin.vtcdrivertransport.ui.onBoarding.flow.onBoardingPagesFlow.OnBoardingFlowScreen
+import com.yassirx.sdui_poc.ui.onBoardingPagesFlow.OnBoardingFlowScreen
 import com.yassirx.sdui_poc.ui.OnBoardingState.OnBoardingStateScreen
 
 @Composable
@@ -34,7 +34,7 @@ fun AppNavHost(
             BackHandler(enabled = true) {
                 onFinish()
             }
-            OnBoardingFlowScreen( groupIndex = backstackentry.arguments?.getString("group")?.toIntOrNull())
+            OnBoardingFlowScreen( groupIndex = backstackentry.arguments?.getString("group")?.toIntOrNull(), onBack = {navController.navigateUp()})
 
         }
     }

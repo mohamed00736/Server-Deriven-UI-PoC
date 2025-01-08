@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.ui.onBoarding.flow.components.documentUpload
+package com.yassirx.sdui_poc.ui.components.documentUpload
 
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -36,7 +36,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.arbin.arbincommon.ui.components.CircularProgress
+import com.yassirx.sdui_poc.ui.components.common.CircularProgress
 import com.yassirx.sdui_poc.createImageUri
 import com.yassirx.sdui_poc.R
 import com.skydoves.landscapist.glide.GlideImage

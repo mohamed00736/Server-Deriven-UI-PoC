@@ -1,4 +1,4 @@
-package com.harbin.vtcdrivertransport.ui.onBoarding.flow.onBoardingPagesFlow
+package com.yassirx.sdui_poc.ui.onBoardingPagesFlow
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
@@ -44,14 +44,14 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 
 
-import com.arbin.arbincommon.ui.components.CircularProgress
-import com.arbin.arbincommon.ui.components.buttons.HarbinButton
+import com.yassirx.sdui_poc.ui.components.common.CircularProgress
+import com.yassirx.sdui_poc.ui.components.common.HarbinButton
 
-import com.harbin.vtcdrivertransport.ui.component.OnBoardingViewHeader
+import com.yassirx.sdui_poc.ui.components.common.OnBoardingViewHeader
 
-import com.harbin.vtcdrivertransport.ui.onBoarding.flow.components.GenderItem
+import com.yassirx.sdui_poc.ui.components.GenderItem
 
-import com.harbin.vtcdrivertransport.ui.onBoarding.flow.components.documentUpload.DocumentUploadItem
+import com.yassirx.sdui_poc.ui.components.documentUpload.DocumentUploadItem
 import com.yassirx.sdui_poc.R
 import com.yassirx.sdui_poc.isValidEmail
 import com.yassirx.sdui_poc.isValidLicensePlate

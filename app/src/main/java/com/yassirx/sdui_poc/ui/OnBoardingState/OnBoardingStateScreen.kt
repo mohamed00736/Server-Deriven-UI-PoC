@@ -43,33 +43,33 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 
-import com.arbin.arbincommon.ui.components.FailedView
-import com.arbin.arbincommon.ui.components.LoadingView
-import com.arbin.arbincommon.ui.components.buttons.HarbinButton
+import com.yassirx.sdui_poc.ui.components.common.FailedView
+import com.yassirx.sdui_poc.ui.components.common.LoadingView
+import com.yassirx.sdui_poc.ui.components.common.HarbinButton
 import com.yassirx.sdui_poc.R
 import com.yassirx.sdui_poc.localize
 import com.yassirx.sdui_poc.model.*
 
 import com.yassirx.sdui_poc.ui.UiState
-import com.harbin.vtcdrivertransport.ui.component.TopViewHeader
+import com.yassirx.sdui_poc.ui.components.common.TopViewHeader
 import com.yassirx.sdui_poc.ui.components.LinearProgressCustom
 
 
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
 fun OnBoardingStateScreen(
-    status: String = "onbb",
+    status: String = "active",
     viewModel: OnBoardingStateViewModel = hiltViewModel(),
-    onGroupSelected: (index: Int) -> Unit={},
+    onGroupSelected: (index: Int) -> Unit,
     onBack: () -> Unit={},
 ) {
     val context = LocalContext.current
     val uiState = viewModel.uiState.collectAsState()
 
     LaunchedEffect(Unit) {
-        if (status == "onbb") {
+        if (status == "inactive") {
             viewModel.getOnBoardingStatus()
-        } else if (status == "ol") {
+        } else if (status == "active") {
           //  viewModel.checkRecruitedBy(context)
             viewModel.updateDataStatusForInactiveCase()
         }
@@ -86,7 +86,7 @@ fun OnBoardingStateScreen(
             is UiState.Success -> {
                 (data.data as? OnboardingData)?.let { listOfGroups ->
                     listOfGroups.let {
-                        if (status == "onb") {
+                        if (status == "ll") {
                             OnBoardingBody(groupList = it.groups, onGroupSelected = onGroupSelected)
                         } else {
                             Box(Modifier.fillMaxSize()) {

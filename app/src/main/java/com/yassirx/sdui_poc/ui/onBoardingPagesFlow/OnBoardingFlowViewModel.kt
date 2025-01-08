@@ -1,13 +1,12 @@
-package com.harbin.vtcdrivertransport.ui.onBoarding.flow.onBoardingPagesFlow
+package com.yassirx.sdui_poc.ui.onBoardingPagesFlow
 
 import android.app.Application
 import androidx.lifecycle.viewModelScope
-import com.arbin.arbincommon.base.BaseViewModel
+import com.yassirx.sdui_poc.ui.OnBoardingState.BaseViewModel
 
-import com.harbin.vtcdrivertransport.data.pref.DataStoreHelper
+import com.yassirx.sdui_poc.data.pref.DataStoreHelper
 
 import com.yassirx.sdui_poc.R
-import com.yassirx.sdui_poc.data.network.Resource
 import com.yassirx.sdui_poc.data.repo.UserRepository
 import com.yassirx.sdui_poc.fromJsonFile
 import com.yassirx.sdui_poc.model.OnboardingData
